@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        return Text("Test Swift UI").foregroundColor(Color.red).bold().kerning(10).strikethrough()
+        return ZStack(content: {
+              RoundedRectangle(cornerRadius: 25.0).foregroundColor(Color.blue).frame(width: 100, height: 100, alignment: .center)
+            Text("Swift UI").foregroundColor(Color.white).bold().kerning(2).strikethrough()
+        })
+       
+//        return
     }
 }
 
